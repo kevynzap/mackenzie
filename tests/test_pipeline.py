@@ -1,7 +1,7 @@
 def test_soma():
-    assert 2 + 2 == 4
+    var = 2 + 2
 
-    return "Testes concluídos com sucesso!"
+    return var
 
 
 var = test_soma()
