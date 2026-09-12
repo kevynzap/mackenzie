@@ -1,7 +1,6 @@
 def test_soma():
-    var = 2 + 2
-
-    return var
+    soma = 2 + 2
+    return soma
 
 
 var = test_soma()
