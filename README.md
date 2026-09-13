@@ -20,7 +20,6 @@ github/
 │   ├── test_app.py
 │   └── test_pipeline.py
 │
-├── app.py
 ├── README.md
 └── requirements.txt
 ```
