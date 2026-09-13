@@ -7,6 +7,8 @@ Este repositório foi criado como um laboratório prático para estudo dos conce
 
 O objetivo é compreender, de forma progressiva, como automatizar a validação, construção e entrega de código utilizando um pipeline.
 
+**Repositório:** https://github.com/kevynzap/mackenzie
+
 ## Estrutura 
 ```bash
 github/
