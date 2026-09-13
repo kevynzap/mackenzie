@@ -8,6 +8,7 @@ Este repositório foi criado como um laboratório prático para estudo dos conce
 O objetivo é compreender, de forma progressiva, como automatizar a validação, construção e entrega de código utilizando um pipeline.
 
 ## Estrutura 
+```bash
 github/
 │
 ├── .github/
@@ -22,7 +23,7 @@ github/
 ├── app.py
 ├── README.md
 └── requirements.txt
-
+```
 ## Principais arquivos
 
 **app.py:** Contém a aplicação Python utilizada nos exemplos.
