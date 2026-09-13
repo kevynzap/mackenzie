@@ -3,34 +3,53 @@
 - Kevyn Zarpellon   RA: 10749524
 - Matheus Eman      RA: 10749523
 
-Este repositório foi criado como um laboratório prático para estudo dos conceitos de DevOps, DataOps e CI/CD, utilizando GitHub Actions e uma aplicação simples em Python.
+Projeto prático desenvolvido durante os estudos de **DevOps e DataOps**, com o objetivo de aplicar conceitos de Engenharia de Dados, testes automatizados e CI utilizando Python, Pytest e GitHub Actions.
 
-O objetivo é compreender, de forma progressiva, como automatizar a validação, construção e entrega de código utilizando um pipeline.
+Construir um pipeline simples de processamento de dados de vendas, desde a leitura de um arquivo CSV até a geração de uma tabela consolidada, utilizando boas práticas de desenvolvimento e automação.
+
+O projeto também demonstra a aplicação de testes automatizados e integração contínua (CI), permitindo que o código seja validado automaticamente a cada alteração enviada ao GitHub.
 
 **Repositório:** https://github.com/kevynzap/mackenzie
 
 ## Estrutura 
 ```bash
 github/
-│
 ├── .github/
 │   └── workflows/
-│       ├── ci.yml
 │       └── ci-cd.yml
 │
+├── data/
+│   └── vendas.csv
+│
+├── output/
+│   └── vendas_processadas.csv
+│
+├── src/
+│   ├── __init__.py
+│   └── pipeline.py
+│
 ├── tests/
-│   ├── test_app.py
-│   └── test_pipeline.py
+│   ├── test_pipeline.py
+│   ├── test_qtd.py
+│   └── vendas_teste.csv
 │
 ├── README.md
 └── requirements.txt
 ```
-## Principais arquivos
-
-**app.py:** Contém a aplicação Python utilizada nos exemplos.
-
-**tests/:** Contém os testes automatizados executados pelo pytest.
-
-**requirements.txt:** Contém as dependências Python necessárias para execução do projeto.
-
-**.github/workflows/:** Contém os workflows utilizados pelo GitHub Actions para automatizar os processos de CI/CD.
+## Fluxo do Processo
+```bash
+text
+Arquivo CSV
+    ↓
+Leitura com Pandas
+    ↓
+Cálculo do valor total
+    ↓
+Agregação por produto
+    ↓
+Arquivo processado
+    ↓
+Testes automatizados com Pytest
+    ↓
+GitHub Actions (CI)
+```
